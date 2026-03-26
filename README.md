@@ -1,115 +1,124 @@
-# 💳 Credit Card Analytics Dashboard (Power BI + SQL)
+# 💳 Credit Card Analytics Dashboard
 
-## 📌 Project Overview
+## 🚀 From Raw Data to Business Insights
 
-This project focuses on analyzing credit card transactions and customer data to generate meaningful insights into spending behavior, revenue trends, and customer segmentation.
+This project demonstrates an end-to-end data analytics workflow where raw credit card data is transformed into actionable business insights using SQL and Power BI.
 
-An end-to-end data analytics pipeline was implemented, starting from raw CSV data ingestion into SQL, followed by data transformation and visualization using Power BI.
-
----
-
-## 🎯 Objective
-
-To build an interactive dashboard that provides weekly and quarterly insights into:
-
-* Customer spending patterns
-* Revenue generation trends
-* Transaction behavior
-* Customer segmentation
+Instead of just building visuals, the focus was on understanding **customer behavior, revenue drivers, and transaction patterns**.
 
 ---
 
-## 🛠️ Tech Stack
+## 🧩 Problem Statement
 
-* **SQL (PostgreSQL)** – Data storage and querying
-* **Power BI** – Data visualization and dashboard creation
-* **Power Query** – Data cleaning and transformation
-* **DAX (Data Analysis Expressions)** – KPI and advanced calculations
+Financial institutions generate massive amounts of transaction data, but extracting meaningful insights from it is challenging.
 
----
+This project answers key business questions:
 
-## 🔄 Data Pipeline
-
-1. Imported raw transaction and customer data (CSV) into SQL database
-2. Created structured tables and performed data validation
-3. Connected Power BI to SQL for real-time data access
-4. Cleaned and transformed data using Power Query
-5. Built interactive dashboards using DAX and visualizations
+* Who are the most valuable customers?
+* Which categories drive the highest revenue?
+* How do spending patterns vary across demographics?
+* What trends can be observed over time?
 
 ---
 
-## 📊 Key Features
+## ⚙️ How It Was Built
 
-### 🔹 Customer Dashboard
+### 1. Data Engineering
 
-* Customer segmentation by **Age Group, Income Group, Education, and Marital Status**
-* Revenue analysis by **Gender, State, and Occupation**
-* Identification of high-value customer segments
+* Imported CSV data into PostgreSQL
+* Created structured tables for transactions and customers
+* Ensured data consistency and correctness
 
-### 🔹 Transaction Dashboard
+### 2. Data Transformation
 
-* Revenue analysis by **Expenditure Type and Card Category**
-* Quarterly revenue and transaction trend analysis
-* Transaction mode insights (**Swipe, Chip, Online**)
-* Customer acquisition cost analysis
+* Cleaned data using Power Query
+* Handled missing values and data types
+* Created derived columns (Age Group, Income Group, Week Number)
 
----
+### 3. Data Modeling & Analysis
 
-## 📈 Key Insights
+* Built relationships between tables
+* Created DAX measures for KPIs and trend analysis
+* Implemented week-over-week revenue comparison
 
-* Bills and entertainment categories contribute the highest revenue
-* Swipe transactions dominate overall transaction volume
-* Q3 shows peak revenue performance compared to other quarters
-* A small group of high-value customers contributes a significant portion of total revenue
+### 4. Visualization
 
----
-
-## 🧠 DAX Highlights
-
-* Created custom KPIs such as **Total Revenue, Transaction Count, Average Transaction Value**
-* Implemented **Week-over-Week Revenue Analysis**
-* Built calculated columns for **Age Group and Income Segmentation**
+* Designed interactive dashboards with filters and slicers
+* Focused on clarity, usability, and business storytelling
 
 ---
 
-## 📸 Dashboard Preview
+## 📊 What This Dashboard Shows
 
-(Add your screenshots here)
+### 👥 Customer Perspective
 
----
+* Revenue contribution by age, income, and occupation
+* Gender-based spending comparison
+* Regional performance (Top states)
+* Customer segmentation for targeted insights
 
-## 📂 Repository Structure
+### 💳 Transaction Perspective
 
-```
-📁 Credit-Card-Analytics-Dashboard
-│── 📊 Dashboard.pbix
-│── 📁 dataset
-│   ├── transactions.csv
-│   ├── customers.csv
-│── 📁 screenshots
-│   ├── customer_dashboard.png
-│   ├── transaction_dashboard.png
-│── README.md
-```
+* Revenue breakdown by expenditure type
+* Card category performance
+* Transaction modes (Swipe, Chip, Online)
+* Quarterly trends and transaction volume
 
 ---
 
-## 🚀 Business Impact
+## 🔍 Key Discoveries
 
-This dashboard enables stakeholders to:
-
-* Monitor revenue trends and customer behavior
-* Identify high-value customers and spending patterns
-* Support data-driven financial and strategic decisions
-
----
-
-## 👩‍💻 Author
-
-**Neha Kumari**
-Aspiring Data Analyst | Power BI | SQL | DSA
+* A small segment of customers contributes disproportionately to total revenue
+* Bills and entertainment dominate spending categories
+* Swipe transactions account for the majority of usage
+* Revenue trends show noticeable variation across quarters
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+## 🧠 Analytical Depth
+
+This project goes beyond basic dashboards by:
+
+* Creating custom revenue metrics (fees + transactions + interest)
+* Performing time-based analysis (weekly & quarterly trends)
+* Segmenting customers for deeper behavioral insights
+
+---
+
+## 🛠️ Tools & Technologies
+
+* PostgreSQL (Database)
+* Power BI (Visualization)
+* Power Query (Data Cleaning)
+* DAX (Data Analysis Expressions)
+
+---
+
+## 📁 Project Assets
+
+* Power BI Dashboard (.pbix)
+* Raw Datasets (CSV files)
+* Dashboard Screenshots
+
+---
+
+## 🎯 Why This Project Matters
+
+This project simulates a real-world business scenario where data is used to:
+
+* Improve decision-making
+* Understand customer behavior
+* Identify revenue opportunities
+
+---
+
+## 👩‍💻 About Me
+
+Neha Kumari
+Data Analyst Aspirant | SQL | Power BI | Problem Solving
+
+---
+
+⭐ If you like this project, feel free to star the repository!
+
 
